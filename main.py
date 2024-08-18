@@ -1,4 +1,6 @@
 import collections
+from random import choice
+
 Card = collections.namedtuple('Card', ['suit', 'rank'])
 
 class FrenchDeck:
@@ -19,3 +21,4 @@ deck = FrenchDeck()  # Create a deck of cards
 print(len(deck))     # Print the number of cards in the deck (should be 52)
 print(deck[0])       # Print the first card in the deck
 print(deck[-1])      # Print the last card in the deck
+print(choice(deck))
